@@ -1,4 +1,4 @@
-PHP Course Projects 🚀
+PHP Course Projects 🚀 🚀
 
 A complete day-wise PHP learning repository covering PHP fundamentals to advanced concepts through practical, hands-on projects. This repository is designed for beginners and intermediate learners who want to build real-world PHP applications step by step.
 
