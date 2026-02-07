@@ -28,12 +28,13 @@ This project is a secure CRUD (Create, Read, Update, Delete) application develop
 
 🛠️ Technologies Used
 
-PHP
+PHP8
 
 MySQL
 
 HTML5
 
 CSS3
+
 
 XAMPP / WAMP (for local server)
