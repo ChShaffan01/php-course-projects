@@ -4,7 +4,6 @@ $conn = mysqli_connect("localhost", "root", "", "student");
 if(!$conn){
     die("Database connection failed");
 }
-
 // ================= PAGINATION SETUP =================
 $limit = 5;
 $page  = isset($_GET['page']) ? (int)$_GET['page'] : 1;
@@ -22,35 +21,28 @@ if($search != ""){
     $query = "SELECT * FROM school 
               LIMIT $start, $limit";
 }
-
 $result = mysqli_query($conn, $query);
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
     <title>Search + Pagination</title>
 </head>
 <body>
-
 <h2>User List</h2>
-
 <!-- ================= SEARCH FORM ================= -->
 <form method="GET">
     <input type="text" name="search" placeholder="Search name"
            value="<?php echo $search; ?>">
     <button>Search</button>
 </form>
-
 <br>
-
 <!-- ================= DATA TABLE ================= -->
 <table border="1" cellpadding="10">
 <tr>
     <th>ID</th>
     <th>Name</th>
 </tr>
-
 <?php
 while($row = mysqli_fetch_assoc($result)){
     echo "<tr>
@@ -81,3 +73,4 @@ for($i = 1; $i <= $pages; $i++){
 
 </body>
 </html>
+
